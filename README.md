@@ -11,3 +11,4 @@ Built with React, Framer Motion, MUI, and creativity.
 This is my portfolio website for doing commisions and such feel free to look around
 
 Thanks for stopping by! Feel free to star ⭐ the repo or share it with someone who needs a game dev ✨
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
