@@ -1,12 +1,71 @@
-# React + Vite
+# 💼 Sakura's/Alex Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my official portfolio — a digital showcase of my projects, skills, and creative experiments. Whether you're a recruiter, fellow developer, or just curious, feel free to explore the code, animations, and systems I've built across platforms.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Site  
+🔗 [Visit the Portfolio](https://your-portfolio-link.com)  
+Built with React, Framer Motion, MUI, and creativity.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎮 Featured Projects
+
+### 🪴 Reprise (Cozy Garden Sim)
+A chill gardening experience with 4 peaceful biomes.  
+🌿 Custom UI | 🌦️ Weather FX | 🎶 Soft ambiance | 🔧 Backend scripting
+
+### ⚔️ Soul-Union (Action RPG)
+Traverse five realms with unique enemies and missions.  
+✨ Ability system | 💫 Multiplayer support | 📜 Quest mechanics
+
+### 🌌 Galactic War (Combat System)
+Blaster and lightsaber mechanics, ragdoll physics, and dash combat.  
+🛡️ Stamina logic | ⚡ FX + SFX design | 🧠 AI pathing  
+
+### 📡 Discord Webhook Integration  
+Live data syncing between Roblox and Discord.  
+📩 Backend Lua scripting | 🔐 Token security | 📊 Rich embeds  
+
+### 👻 Horror Game (WIP)  
+Atmospheric horror project with jumpscare logic and audio design.  
+🕯️ Event triggers | 🩸 Creep FX | 🔦 Flashlight + stamina mechanics  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React, Vite, Framer Motion, MUI
+- **Backend (Roblox):** Luau (Roblox scripting), ModuleScripts, DataStores
+- **Design:** Figma, Adobe XD, hand-drawn wireframes
+- **Tools:** OBS Studio, Git, VSCode, Roblox Studio
+
+---
+
+## 🎥 Video Demos
+Each project card features embedded videos with narrated tooltips and highlights. All clips were recorded, edited, and sequenced by me using OBS + custom scripts.
+
+---
+
+## 🎨 Style
+This portfolio embraces a **glitch-TV meets cozy-dev** aesthetic.  
+Retro animations, floating UI cards, and color-coded sections for clarity and vibe.
+
+---
+
+## ✨ Goals
+- Showcase interactive UI systems  
+- Display Roblox scripting range (combat, UI, multiplayer, animation)
+- Serve as a creative resume for game studios and collaborators
+
+---
+
+## 🧠 Contact & Collab
+Want to build something together or hire me?  
+💬 Discord: Un6dinary (yagami_149)
+🛠️ Available for commissions and freelance work
+
+---
+
+Thanks for stopping by! Feel free to star ⭐ the repo or share it with someone who needs a game dev ✨
