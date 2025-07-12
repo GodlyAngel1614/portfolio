@@ -31,6 +31,11 @@ import F11 from "../../videos/FPS/11.mp4"
 import R1 from "../../videos/Random/1.mp4"
 import R2 from "../../videos/Random/2.mp4"
 import R3 from "../../videos/Random/3.mp4"
+import R4 from "../../videos/Random/4.mp4"
+
+import W1 from "../../videos/W/1.mp4"
+import W2 from "../../videos/W/2.mp4"
+
 
 const MotionLink = motion.create(Link)
 const MotionCard = motion.create(Card)
@@ -38,48 +43,48 @@ const MotionCard = motion.create(Card)
 import './Roblox.css'
 
 const cardComponents = [
-    {
-        id: 1,
-        title: "Reprise",
-        description: "Cultivate peace in a cozy garden sim with 4 unique zones, soft wind, and soil-stained joy.",
-        bgColor: "#e2c9a0",
-        glowShadow: "-1rem 1rem 20px #ffe7b2",
-        textColor: "#2f1e1e", // earthy brown
-        link: "https://www.roblox.com/games/6993566488/Reprise",
+   // {
+   //     id: 1,
+    //    title: "Reprise",
+   //     description: "Cultivate peace in a cozy garden sim with 4 unique zones, soft wind, and soil-stained joy.",
+    //    bgColor: "#e2c9a0",
+   //     glowShadow: "-1rem 1rem 20px #ffe7b2",
+  //      textColor: "#2f1e1e", // earthy brown
+   //     link: "https://www.roblox.com/games/6993566488/Reprise",
 
-        videolink: "https://www.youtube.com/embed/G0xLWPBsvF8?si=9j87qVLuLnsF6Syf",
+   //     videolink: "https://www.youtube.com/embed/G0xLWPBsvF8?si=9j87qVLuLnsF6Syf",
+//
+   //     videolink1: "https://www.youtube.com/embed/G0xLWPBsvF8?si=9j87qVLuLnsF6Syf",
+//
+   //     videolink2: "https://www.youtube.com/embed/G0xLWPBsvF8?si=9j87qVLuLnsF6Syf",
+//
+   //     videolink3: "https://www.youtube.com/embed/G0xLWPBsvF8?si=9j87qVLuLnsF6Syf",
+//
+   //     videolink4: "https://www.youtube.com/embed/G0xLWPBsvF8?si=9j87qVLuLnsF6Syf",
 
-        videolink1: "https://www.youtube.com/embed/G0xLWPBsvF8?si=9j87qVLuLnsF6Syf",
+ //   },
 
-        videolink2: "https://www.youtube.com/embed/G0xLWPBsvF8?si=9j87qVLuLnsF6Syf",
+  //  {
+   //     id: 2,
+    //    title: "Soul-Union",
+    //    description: "An RPG adventure bound by fate — enter missions, wield magic, and traverse soul-linked realms. - Coming soon.",
+    //    bgColor: "#141414",
+    //    glowShadow: "0 0 30px #8de1ff",
+    //    textColor: "#d1f3ff",
+    //    link: "https://www.roblox.com/games/6993566488/Reprise",
+   //     videolink: "https://www.youtube.com/embed/G0xLWPBsvF8?si=9j87qVLuLnsF6Syf"
+ //   },
 
-        videolink3: "https://www.youtube.com/embed/G0xLWPBsvF8?si=9j87qVLuLnsF6Syf",
-
-        videolink4: "https://www.youtube.com/embed/G0xLWPBsvF8?si=9j87qVLuLnsF6Syf",
-
-    },
-
-    {
-        id: 2,
-        title: "Soul-Union",
-        description: "An RPG adventure bound by fate — enter missions, wield magic, and traverse soul-linked realms.",
-        bgColor: "#141414",
-        glowShadow: "0 0 30px #8de1ff",
-        textColor: "#d1f3ff",
-        link: "https://www.roblox.com/games/6993566488/Reprise",
-        videolink: "https://www.youtube.com/embed/G0xLWPBsvF8?si=9j87qVLuLnsF6Syf"
-    },
-
-    {
-        id: 3,
-        title: "Soul-Tycoon",
-        description: "Build an eerie soul-harvesting empire in this pastel-dark tycoon inspired by haunted hospitals.",
-        bgColor: "#1a1a2e",
-        glowShadow: "0 0 15px #ff99cc",
-        textColor: "#ffe6f7",
-        link: "https://www.roblox.com/games/6993566488/Reprise",
-        videolink: "https://www.youtube.com/embed/G0xLWPBsvF8?si=9j87qVLuLnsF6Syf"
-    },
+  //  {
+    //    id: 3,
+    //    title: "Soul-Tycoon",
+   //     description: "Build an eerie soul-harvesting empire in this pastel-dark tycoon inspired by haunted hospitals.",
+    //    bgColor: "#1a1a2e",
+    //    glowShadow: "0 0 15px #ff99cc",
+     //   textColor: "#ffe6f7",
+     //   link: "https://www.roblox.com/games/6993566488/Reprise",
+     //   videolink: "https://www.youtube.com/embed/G0xLWPBsvF8?si=9j87qVLuLnsF6Syf"
+  //  },
 
     {
         id: 4,
@@ -88,7 +93,6 @@ const cardComponents = [
         bgColor: "#050d2f",
         glowShadow: "1px 0 5rem #7fcfff",
         textColor: "#e6f4ff",
-        link: "https://www.roblox.com/games/6993566488/Reprise",
 
         videos: [
             {
@@ -192,18 +196,41 @@ const cardComponents = [
         bgColor: "#2c2f7e",
         glowShadow: "0 0 18px #a3a6ff",
         textColor: "#ffffff",
-        link: "https://www.roblox.com/games/6993566488/Reprise",
+
+        videos: [
+            {
+                title: "🔗 Discord Stats Integration\n",
+                description: "💬 Use in-game chat commands to trigger real-time messages sent directly to your Discord server!\n" +
+                    "– Supports custom payloads for advanced use cases\n" +
+                    "– Call from either the module or server script\n" +
+                    "– Add rich field data or send simple default messages\n" +
+                    "– Perfect for logging stats, notifications, or game events" ,
+                code: " ",
+                link: W1,
+            },
+
+            {
+                title: "🧩 Discord Webhook Commands",
+                description: "Trigger custom Discord messages directly from in-game chat commands!\n" +
+                    "– 👤 Tracks which player used the command and when\n" +
+                    "– 🛠️ Supports customizable behavior per command\n" +
+                    "– 🔄 Seamlessly bridges Roblox to Discord with full control\n" +
+                    "– 📦 Built command system, webhook logic, and data pipeline" ,
+                code: "",
+                link: W2,
+            },
+        ],
     },
 
-    {
-        id: 6,
-        title: "Horror Game",
-        description: "Coming soon: shadows stir, doors creak, and something follows. Stay tuned...",
-        bgColor: "#000000",
-        glowShadow: "0 0 35px #ff4d4d",
-        textColor: "#ffcccc",
-        link: "https://www.roblox.com/games/6993566488/Reprise",
-    },
+    // {
+    //    id: 6,
+     //   title: "Horror Game",
+    //    description: "Coming soon: shadows stir, doors creak, and something follows. Stay tuned...",
+    //    bgColor: "#000000",
+     //   glowShadow: "0 0 35px #ff4d4d",
+     //   textColor: "#ffcccc",
+     //   link: "https://www.roblox.com/games/6993566488/Reprise",
+   // },
 
     {
         id: 7,
@@ -212,7 +239,6 @@ const cardComponents = [
         bgColor: "#050d2f",
         glowShadow: "1px 0 5rem #7fcfff",
         textColor: "#e6f4ff",
-        link: "https://www.roblox.com/games/6993566488/Reprise",
 
         videos: [
             {
@@ -316,8 +342,6 @@ const cardComponents = [
         bgColor: "#1a0b0b",
         glowShadow: "0 0 35px #ff3e3e",
         textColor: "#ffe6b8",
-        link: "https://www.roblox.com/games/6993566488/Reprise",
-
         videos: [
             {
                 title: "🎁 Basic Donation",
@@ -356,7 +380,6 @@ const cardComponents = [
         bgColor: "#0f1c2e",
         glowShadow: "0 0 30px #4cbaff",
         textColor: "#cceaff",
-        link: "https://www.roblox.com/games/6993566488/Reprise",
 
         videos: [
             {
@@ -447,7 +470,6 @@ const cardComponents = [
         bgColor: "#2a2438",
         glowShadow: "0 0 30px #c471ed",
         textColor: "#e7ddff",
-        link: "https://www.roblox.com/games/6993566488/Reprise",
 
         videos: [
             {
@@ -474,6 +496,36 @@ const cardComponents = [
                 code: " ",
                 link: R3,
             },
+
+            {
+                title: "🥊 Strength Simulator" +
+                    "\n",
+                description:  "💡 Project Summary:\n" +
+                    "A quirky little passion project built out of boredom—but surprisingly deep!\n" +
+                    "\n" +
+                    "🔧 Features:\n" +
+                    "\n" +
+                    "Punching bag mechanics with emoji feedback 💥\n" +
+                    "\n" +
+                    "Dynamic warning system if strength is too low ⚠️\n" +
+                    "\n" +
+                    "Auto-battle with NPCs based on strength meter 🤖\n" +
+                    "\n" +
+                    "Damage calculation per round until win or defeat\n" +
+                    "\n" +
+                    "Win tracking with DataStores (auto-saves victories + stats) 🧠\n" +
+                    "\n" +
+                    "Strength-based access to new fights + opponents\n" +
+                    "\n" +
+                    "Easily expandable with new modes, effects, or challenges! 🌱\n" +
+                    "\n" +
+                    "🧪 Future potential:\n" +
+                    "Could evolve into a full mini-fighting sim with animations, sounds, and even PVP duels.\n" +
+                    "\n" +
+                    "\n",
+                code: " ",
+                link: R4,
+            },
         ],
     },
 ];
@@ -484,10 +536,46 @@ function Roblox() {
     const [showModal, setShowModal] = useState(false);
     return (
         <div>
-            <main className={"Header"}>
-                <h1> Roblox Projects </h1>
-                <h2> I'm a Roblox developer </h2>
-            </main>
+            <motion.main
+                className="Header"
+                animate={{
+                    background: [
+                        "linear-gradient(135deg, #0f0f0f, #b22222)", // black to crimson
+                        "linear-gradient(135deg, #1a1a1a, #3a89a8)", // dark to teal-blue
+                        "linear-gradient(135deg, #3a89a8, #1a1a1a)", // teal-blue to dark again
+                    ]
+                }}
+                transition={{
+                    duration: 5,
+                    repeat: Infinity,
+                    ease: "anticipate",
+                }}
+            >
+                <motion.h1 className={"glow-text"} style={{fontSize: "2.5rem", letterSpacing: "0.4rem"}}
+                    animate={{
+                        textShadow: ["text-shadow: 0 0 10px #ffffff, 0 0 20px #94e1ff", " 0 0 20px #fa5c89", "0 0 20px #000000",],
+                    }}
+
+                    transition={{
+                        duration: 10,
+                        repeat: Infinity,
+                        ease: "linear",
+                    }}
+                > Roblox Projects </motion.h1>
+                <motion.h2 className={"glow-text"} style={{fontSize: "1.5rem", letterSpacing: "0.3rem"}}
+                    animate={{
+                        textShadow: ["text-shadow: 0 0 10px #ffffff, 0 0 20px #94e1ff", " 0 0 20px #fa5c89", "0 0 20px #000000",],
+                    }}
+
+                           transition={{
+                               duration: 15,
+                               repeat: Infinity,
+                               ease: "anticipate",
+                           }}
+                > This section highlights some of the Roblox projects I’ve worked on — a mix of personal builds and commissions. From UI design to custom systems and mechanics, it’s just one part of what I do as a developer. Feel free to explore and see what I’ve been up to!
+
+                </motion.h2>
+            </motion.main>
 
             <div className={"card-container"}>
                 <div className={"project-one"}>
@@ -607,9 +695,6 @@ function Roblox() {
 
 
                                     <CardMedia className={"media"}>
-                                        <MotionLink to={card.link} className={"l"}>
-                                            Link to game
-                                        </MotionLink>
                                     </CardMedia>
                                     <CardContent>
                                         <Typography variant="p" component="h2"
