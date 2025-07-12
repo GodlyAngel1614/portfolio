@@ -1,7 +1,6 @@
 import {Card, CardActions, CardHeader, CardMedia, Typography} from "@mui/material";
 import CardContent from "@mui/material/CardContent";
 import React, {useState, useEffect} from 'react';
-import {Link} from "react-router-dom"
 import {motion} from "framer-motion";
 
 import G1 from "../../videos/GW/1.mp4"
@@ -35,10 +34,6 @@ import R4 from "../../videos/Random/4.mp4"
 
 import W1 from "../../videos/W/1.mp4"
 import W2 from "../../videos/W/2.mp4"
-
-
-const MotionLink = motion.create(Link)
-const MotionCard = motion.create(Card)
 
 import './Roblox.css'
 
