@@ -1,4 +1,4 @@
-# 💼 Heaven Hobson's Portfolio
+# 💼 Sakura's/Alex Portfolio
 
 Welcome to my official portfolio — a digital showcase of my projects, skills, and creative experiments. Whether you're a recruiter, fellow developer, or just curious, feel free to explore the code, animations, and systems I've built across platforms.
 
@@ -63,8 +63,7 @@ Retro animations, floating UI cards, and color-coded sections for clarity and vi
 
 ## 🧠 Contact & Collab
 Want to build something together or hire me?  
-📧 Email: yourname@email.com  
-💬 Discord: @YourDiscordUsername  
+💬 Discord: Un6dinary (yagami_149)
 🛠️ Available for commissions and freelance work
 
 ---
