@@ -1,14 +1,37 @@
-# 💼 Sakura's/Alex Portfolio
+# 💼 Sakura / Alex's Developer Portfolio
+Welcome to my official portfolio site — a space where I showcase my Roblox projects, commissioned systems, and various creative experiments in web and game development.
 
-Welcome to my official portfolio — a digital showcase of my projects, skills, and creative experiments. Whether you're a recruiter, fellow developer, or just curious, feel free to explore the code, animations, and systems I've built across platforms.
+Whether you're a recruiter, a fellow developer, or just exploring, you're more than welcome here!
+Feel free to browse the projects and explore the systems I’ve built.
 
----
+🌐 Live Site
+🔗 View Portfolio Website
+Built with React, Framer Motion, Material UI, and a whole lot of ✨ passion.
 
-## 🌐 Live Site  
-🔗 [Visit the Portfolio](https://your-portfolio-link.com)  
-Built with React, Framer Motion, MUI, and creativity.
+This site is designed to present my commission work and personal experiments in both Roblox scripting and full-stack web development.
+You'll find everything from UI integrations and Discord pipelines to full games and utilities.
 
-This is my portfolio website for doing commisions and such feel free to look around
+## 🛠️ Tech Stack
+⚛️ React (Vite)
 
-Thanks for stopping by! Feel free to star ⭐ the repo or share it with someone who needs a game dev ✨
+🎞️ Framer Motion
+
+🎨 Material UI
+
+🎮 Roblox (Luau)
+
+🌐 Discord API
+
+☁️ Vercel for deployment
+
+🏆 Athena Award Nominee
+
+
 [![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
+If you like what you see, feel free to ⭐ the repo or share it with someone who might enjoy it.
+
+🙌 Thanks for Visiting!
+Feel free to reach out, leave feedback, or follow me on my dev journey.
+Whether you're here to hire, collaborate, or just explore — I’m glad you stopped by.
+
+💬 “Code is just the start — creativity gives it meaning.”
