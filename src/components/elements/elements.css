@@ -1,0 +1,29 @@
+
+.Navbar {
+    width: 100%;
+    background-color: #292929;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 1rem;
+}
+
+.content {
+
+}
+
+.links{
+    list-style: none;
+    display: flex;
+    gap: 10rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #fff;
+}

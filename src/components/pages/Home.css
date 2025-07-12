@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Monoton&family=Rubik+Glitch&family=VT323&display=swap');
+:root {
+    background-color: #1b1b1b;
+}
+
+.outer-screen {
+    background-color: #000;
+    display: flex;
+    justify-content: center;     /* horizontal center */
+    align-items: center;         /* vertical center */
+    height: 100dvh;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;                  /* Remove or reduce padding */
+}
+
+.inner-screen {
+    background-color: #174068;   /* your screen color */
+    width: 90%;
+    max-width: 800px;
+    height: 500px;
+    border-radius: 12px;
+    box-shadow: 1dvh .5dvh 2rem #59657c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+    color: white;
+}
+
+.link-tree {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.link {
+    text-decoration: dotted black;
+    color: #eff4ff;
+    font-family: Rubik Glitch, serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    text-align: center;
+    border-radius: 10dvh;
+    border: 1px solid #a9bacc;
+}
+
+.title {
+    font-family: 'Akronim', cursive;
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    color: #cbdffa;
+    text-shadow: 0 0 1rem #0e72ba;
+}
+
+.glitch {
+    background-blend-mode: screen;
+    filter: contrast(200%) brightness(130%) saturate(150%);
+    backdrop-filter: blur(1px);
+    width: 140%;
+    align-self: center;
+    align-content: center;
+    height: 7vh;
+    margin: 0;
+}
+
+
+
+
+.header {
+    text-align: center;
+}
