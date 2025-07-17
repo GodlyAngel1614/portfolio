@@ -34,9 +34,6 @@ There is an inspect button over every video that will give you a descriptor of w
 
 ☁️ Vercel for deployment
 
-🏆 Athena Award Nominee
-
-
 [![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
 
 I'll be making changes to it as I get better at front-end work (such as the look of the website) which at the moment I'm not too keen on it except for the home page because It was inspired by a glitching TV
