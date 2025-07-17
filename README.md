@@ -1,9 +1,12 @@
 # 💼 Sakura (roblox displaymame) / Alex's Developer Portfolio
-Discord Username:
-Discord Displayname:
 
-Roblox Username:
-Roblox Displayname:
+Discord Username: Un6dinary
+
+Discord Displayname: yagami_149
+
+Roblox Username: Heavenslay2020
+
+Roblox Displayname: Sakura
 
 This is my current portfolio website it'll be going through changes as i do more projects and add them to my showcase
 
