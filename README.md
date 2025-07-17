@@ -1,15 +1,21 @@
-# 💼 Sakura / Alex's Developer Portfolio
-Welcome to my official portfolio site — a space where I showcase my Roblox projects, commissioned systems, and various creative experiments in web and game development.
+# 💼 Sakura (roblox displaymame) / Alex's Developer Portfolio
+Discord Username:
+Discord Displayname:
 
-Whether you're a recruiter, a fellow developer, or just exploring, you're more than welcome here!
-Feel free to browse the projects and explore the systems I’ve built.
+Roblox Username:
+Roblox Displayname:
+
+This is my current portfolio website it'll be going through changes as i do more projects and add them to my showcase
+
+There are videos that you can scroll through and they are organized by category, whether a random project that was done a while ago or a commision done by client done more recently 
 
 🌐 Live Site
 🔗 portfolio-teal-one-b0oe96rnnw.vercel.app
-Built with React, Framer Motion, Material UI, and a whole lot of ✨ passion.
+Built with React, Framer Motion, Material UI
 
-This site is designed to present my commission work and personal experiments in both Roblox scripting and full-stack web development.
-You'll find everything from UI integrations and Discord pipelines to full games and utilities.
+The purpose of this website is designed to showcase my work both in roblox script and full-stack web development. 
+
+There is an inspect button over every video that will give you a descriptor of what I worked on and didn't work on
 
 ## 🛠️ Tech Stack
 ⚛️ React (Vite)
@@ -28,10 +34,6 @@ You'll find everything from UI integrations and Discord pipelines to full games 
 
 
 [![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
-If you like what you see, feel free to ⭐ the repo or share it with someone who might enjoy it.
 
-🙌 Thanks for Visiting!
-Feel free to reach out, leave feedback, or follow me on my dev journey.
-Whether you're here to hire, collaborate, or just explore — I’m glad you stopped by.
-
-💬 “Code is just the start — creativity gives it meaning.”
+I'll be making changes to it as I get better at front-end work (such as the look of the website) which at the moment I'm not too keen on it except for the home page because It was inspired by a glitching TV
+But your free to look through it
