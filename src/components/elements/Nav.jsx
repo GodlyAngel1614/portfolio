@@ -36,7 +36,7 @@ function Nav() {
                         Home
                     </MotionLink>
 
-                    <MotionLink style={{color: "#fff", textDecoration: "none"}} to={"/"}
+                    <MotionLink style={{color: "#fff", textDecoration: "none"}} to={"/About"}
                                 animate={{
                                     color: []
                                 }}
