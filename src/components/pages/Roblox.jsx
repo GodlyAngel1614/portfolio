@@ -92,13 +92,15 @@ const cardComponents = [
         videos: [
             {
                 title: "⚔️ Sword Combat",
-                description: "Combo Attacks" +
-                    "Chain up to 4 unique sword animations in sequence." +
-                    "🪫 Each swing costs 1 charge and 10 stamina" +
-                    "" +
-                    "Toggle Saber (Q)" +
-                    "– Activate: Extend the saber and flicker to life" +
-                    "– Deactivate: Retract the saber and flicker off" +
+                description: "🗡️ Combo Attacks\n" +
+                    "Chain up to 4 unique sword \n animations in sequence.\\n" +
+
+                    "🪫 Each swing costs:\n" +
+                    "– 1 charge\n" +
+                    "– 10 stamina\n\n" +
+                    "🔘 Toggle Saber (Q)\n" +
+                    "– Activate: Extends the saber and flickers to life.\n" +
+                    "– Deactivate: Retracts the saber and flickers off." +
                     "",
                 code: " ",
                 link: G1,
@@ -596,7 +598,16 @@ function Roblox() {
                                                     </button>
                                                     <div className="scrollable-description">
                                                             <h2> Description </h2>
-                                                        <p className={"code"}>{activeDescription}</p>
+                                                        {activeDescription.split('\n').map((line, i) => (
+                                                            <div style={{whiteSpace: "pre-line", fontSize: "1.2rem"}}>
+                                                                <React.Fragment key={i}>
+                                                                    {line}
+                                                                    <br />
+                                                                </React.Fragment>
+                                                            </div>
+                                                        ))}
+
+
                                                     </div>
                                                 </div>
                                             </div>

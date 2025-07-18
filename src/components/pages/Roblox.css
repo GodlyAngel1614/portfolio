@@ -154,6 +154,7 @@ p {
     background: none;
     border: none;
     cursor: pointer;
+    white-space: pre-line;
 }
 
 .inspect-button {
