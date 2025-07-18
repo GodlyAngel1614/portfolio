@@ -1,71 +1,40 @@
-# 💼 Sakura's/Alex Portfolio
+# 💼 Sakura (roblox displaymame) / Alex's Developer Portfolio
 
-Welcome to my official portfolio — a digital showcase of my projects, skills, and creative experiments. Whether you're a recruiter, fellow developer, or just curious, feel free to explore the code, animations, and systems I've built across platforms.
+Discord Username: Un6dinary
 
----
+Discord Displayname: yagami_149
 
-## 🌐 Live Site  
-🔗 [Visit the Portfolio](https://your-portfolio-link.com)  
-Built with React, Framer Motion, MUI, and creativity.
+Roblox Username: Heavenslay2020
 
----
+Roblox Displayname: Sakura
 
-## 🎮 Featured Projects
+This is my current portfolio website it'll be going through changes as i do more projects and add them to my showcase.
 
-### 🪴 Reprise (Cozy Garden Sim)
-A chill gardening experience with 4 peaceful biomes.  
-🌿 Custom UI | 🌦️ Weather FX | 🎶 Soft ambiance | 🔧 Backend scripting
+There are videos that you can scroll through and they are organized by category, whether a random project that was done a while ago or a commision done by client done more recently.
 
-### ⚔️ Soul-Union (Action RPG)
-Traverse five realms with unique enemies and missions.  
-✨ Ability system | 💫 Multiplayer support | 📜 Quest mechanics
+🌐 Live Site
+🔗 portfolio-teal-one-b0oe96rnnw.vercel.app
+Built with React, Framer Motion, Material UI
 
-### 🌌 Galactic War (Combat System)
-Blaster and lightsaber mechanics, ragdoll physics, and dash combat.  
-🛡️ Stamina logic | ⚡ FX + SFX design | 🧠 AI pathing  
+The main use is you click on the link for whichever page you want to see and you'll see an assortment of videos displaying my work!
+The purpose of this website is designed to showcase my work both in roblox script and full-stack web development. 
 
-### 📡 Discord Webhook Integration  
-Live data syncing between Roblox and Discord.  
-📩 Backend Lua scripting | 🔐 Token security | 📊 Rich embeds  
-
-### 👻 Horror Game (WIP)  
-Atmospheric horror project with jumpscare logic and audio design.  
-🕯️ Event triggers | 🩸 Creep FX | 🔦 Flashlight + stamina mechanics  
-
----
+There is an inspect button over every video that will give you a descriptor of what I worked on and didn't work on.
 
 ## 🛠️ Tech Stack
+⚛️ React (Vite)
 
-- **Frontend:** React, Vite, Framer Motion, MUI
-- **Backend (Roblox):** Luau (Roblox scripting), ModuleScripts, DataStores
-- **Design:** Figma, Adobe XD, hand-drawn wireframes
-- **Tools:** OBS Studio, Git, VSCode, Roblox Studio
+🎞️ Framer Motion
 
----
+🎨 Material UI
 
-## 🎥 Video Demos
-Each project card features embedded videos with narrated tooltips and highlights. All clips were recorded, edited, and sequenced by me using OBS + custom scripts.
+🎮 Roblox (Luau)
 
----
+🌐 Discord API
 
-## 🎨 Style
-This portfolio embraces a **glitch-TV meets cozy-dev** aesthetic.  
-Retro animations, floating UI cards, and color-coded sections for clarity and vibe.
+☁️ Vercel for deployment
 
----
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
 
-## ✨ Goals
-- Showcase interactive UI systems  
-- Display Roblox scripting range (combat, UI, multiplayer, animation)
-- Serve as a creative resume for game studios and collaborators
-
----
-
-## 🧠 Contact & Collab
-Want to build something together or hire me?  
-💬 Discord: Un6dinary (yagami_149)
-🛠️ Available for commissions and freelance work
-
----
-
-Thanks for stopping by! Feel free to star ⭐ the repo or share it with someone who needs a game dev ✨
+I'll be making changes to it as I get better at front-end work (such as the look of the website) which at the moment I'm not too keen on it except for the home page because It was inspired by a glitching TV
+But your free to look through it.
