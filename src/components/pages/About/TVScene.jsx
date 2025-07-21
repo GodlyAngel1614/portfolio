@@ -9,15 +9,9 @@ import {useState} from "react";
 export default function TVScene() {
 
     const [hovered, setHovered] = useState(false);
-    const [isBig, setBig] = useState(true);
     const handlePointerOver = () =>  setHovered(true);
 
     const handlePointerOut = () => setHovered(false);
-
-    const scale = useSpring({
-        scale: hovered && isBig? [1.5, 1.5, 1.5] : [0.5, 0.5, 0.5],
-        config: { mass: 1, tension: 170, friction: 26 },
-    })
 
     return (
         <Canvas shadows camera={{ position: [0, 2, 5], fov: 75 }}>
@@ -26,7 +20,6 @@ export default function TVScene() {
             <pointLight position={[10, 10, 10]} />
 
             <mesh position={[0, 0, 0]}
-                scale ={scale}
                   onPointerOver={handlePointerOver}
                   onPointerOut={handlePointerOut}
             >
