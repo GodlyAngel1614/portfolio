@@ -6,16 +6,6 @@ const MotionLink = motion.create(Link)
 import robloxLogo from "../../assets/robloxLogo.png"
 import godotLogo from "../../assets/godotLogo.png"
 
-
-const buttons = [
-    {id: 2, talk: "one"}
-]
-
-// {buttons.map((button) => {
-//    console.log(button.id)
-//    console.log(button.talk)
-//})}
-
 function Home() {
     return (
         <div className={"outer-screen"}>

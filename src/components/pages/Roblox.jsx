@@ -108,13 +108,13 @@ const cardComponents = [
 
             {
                 title: "🪂 Mobility",
-                description: "Double Jump (Space)" +
-                    "While mid-air, press Space again to perform a second jump." +
-                    "🪫 Costs 10 stamina (initial jump costs 5)" +
+                description: "Double Jump (Space)\n" +
+                    "\nWhile mid-air, press Space again to perform a second jump.\n" +
+                    "\n\n🪫 Costs 10 stamina (initial jump costs 5)" +
                     "" +
-                    "Dash (R)" +
-                    "Hold R to dash in your current direction." +
-                    "🪫 Costs 10 stamina" ,
+                    "\n\nDash (R)" +
+                    "\n\nHold R to dash in your current direction." +
+                    "\n\n🪫 Costs 10 stamina" ,
                 code: "",
                 link: G2,
             },
@@ -122,13 +122,13 @@ const cardComponents = [
             {
                 title: "Throwing + Catching + Ragdoll",
                 description: "🌀 Saber Throw (T)" +
-                    "Throw your saber forward in the direction you're facing." +
-                    "Automatically returns after reaching 10 units." +
-                    "🪫 Costs 5 stamina" +
+                    "\n\nThrow your saber forward in the direction you're facing." +
+                    "\n\nAutomatically returns after reaching 10 units." +
+                    "\n\n🪫 Costs 5 stamina" +
                     "" +
-                    "🤜 Grapple (E)" +
-                    "If your hand touches another player’s body part, ragdoll them for 2 seconds." +
-                    "🪫 Costs 5 stamina" +
+                    "\n\n🤜 Grapple (E)" +
+                    "\n\nIf your hand touches another player’s body part, ragdoll them for 2 seconds." +
+                    "\n\n🪫 Costs 5 stamina" +
                     "",
                 code: "",
                 link: G3,
@@ -138,11 +138,11 @@ const cardComponents = [
                 title: "🛡️ Blocking (Test Mode)",
                 description: "For testing, the NPC target is automatically added to the player’s blocking table." +
                     "" +
-                    "Stun Window:" +
-                    "During the first 2 seconds of blocking, incoming hits will stagger the player." +
+                    "\n\nStun Window:" +
+                    "\nDuring the first 2 seconds of blocking, incoming hits will stagger the player." +
                     "" +
-                    "Full Block:" +
-                    "After 2 seconds, if the player is still blocking, they become immune to damage." ,
+                    "\n\nFull Block:" +
+                    "\nAfter 2 seconds, if the player is still blocking, they become immune to damage." ,
                 code: "",
                 link: G4,
             },
@@ -445,14 +445,16 @@ const cardComponents = [
 
             {
                 title: "🔫 Armed Walk & Shoot",
-                description: "Weapon-equipped walking, idle, and shooting animations. Firing triggers recoil feedback and body movement synced with shots.",
+                description: "Weapon-equipped " +
+                    "\nwalking, \nidle, \nand shooting animations. \nFiring triggers recoil feedback and body movement synced with shots.",
                 code: " ",
                 link: F10,
             },
 
             {
                 title: "🪖 Crouch & Prone (Armed)",
-                description: "Crouch and prone animations when holding a weapon. Holds [C] or [Z] for responsive low-profile movements during combat.",
+                description: "Crouch and prone animations when holding a weapon. " +
+                    "\nHolds [C] or [Z] for responsive low-profile movements during combat.",
                 code: " ",
                 link: F11,
             },
@@ -472,14 +474,20 @@ const cardComponents = [
             {
                 title: "Yandere killing effect",
                 description:  "☠️ Custom kill mechanic that triggers a scripted blood effect. " +
-                    "Visuals (blood pool, UI) were made by another dev — my contribution was the elimination logic and module integration.",
+                    "Visuals" +
+                    "\n (blood pool, UI) were made by another dev — my contribution was the elimination logic and module integration.",
                 code: " ",
                 link: R1,
             },
 
             {
                 title: "🎮 Ace-Inspired Main Menu",
-                description:  "\"Stylized main menu inspired by Ace Attorney — features custom UI, dynamic camera panning, gradient loading effects, and original menu music for dramatic flair.\"\n" +
+                description:  "\"Stylized main menu inspired by Ace Attorney " +
+                    "\n— features" +
+                    "\n custom UI, " +
+                    "\ndynamic camera panning, " +
+                    "\ngradient loading effects, " +
+                    "\nand original menu music for dramatic flair.\"\n" +
                     "\n",
                 code: " ",
                 link: R2,
@@ -488,7 +496,8 @@ const cardComponents = [
             {
                 title: "🔁 Sequenced Hit Combo\n" +
                     "\n",
-                description:  "💥 A commissioned melee system featuring a 4-hit attack chain — each swing is synced with unique hit sounds and an active hitbox, triggering on impact with players or NPCs. Responsive, satisfying, and designed for combo clarity.\n" +
+                description:  "💥 A commissioned melee system featuring a 4-hit attack chain" +
+                    "\n — each swing is synced with unique hit sounds and an active hitbox, triggering on impact with players or NPCs. Responsive, satisfying, and designed for combo clarity.\n" +
                     "\n",
                 code: " ",
                 link: R3,

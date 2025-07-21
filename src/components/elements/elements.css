@@ -1,7 +1,7 @@
 
 .Navbar {
     width: 100%;
-    background-color: #292929;
+    background-color: #000000;
     color: #fff;
     text-align: center;
     position: fixed;
@@ -10,10 +10,6 @@
     left: 0;
     z-index: 10;
     padding: 1rem;
-}
-
-.content {
-
 }
 
 .links{

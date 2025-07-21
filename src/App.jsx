@@ -13,6 +13,7 @@ const routes = [
     { path: '/roblox', element: <Roblox /> },
     { path: '/godot', element: <Godot /> },
     { path: '/about', element: <About /> },
+    { path: '/a', element: <About /> },
 
 ];
 
