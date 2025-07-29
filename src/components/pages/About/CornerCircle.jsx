@@ -1,31 +1,38 @@
 import {Html} from "@react-three/drei";
 import faceLogo from "../../../assets/faceLogo.png"
+
+
+
 export default function CornerCircle() {
-    return ( <Html
-        position={[0, 0, 0]}
-        style={{
-            position: 'fixed',
-            top: '20px',   // adjust corner
-            right: '20px',
-            width: '80px',
-            height: '80px',
-            borderRadius: '50%',
-            overflow: 'hidden',
-            boxShadow: '0 0 10px rgba(0,0,0,0.4)',
-            cursor: 'pointer',
-            zIndex: 10,
-        }}
-        transform={false} // this disables camera-follow behavior
-    >
-        <img
-            alt="Circle Icon"
-            style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-                borderRadius: '50%',
+    return (
+        <Html
+            position={[-6.5, 4.2, -4.9]}
+            transform={false}
+            occlude={true}
+        >
+            <div
+                style={{
+                    backgroundColor: 'white',
+                    borderRadius: 4,
+                    width: "10rem",
+                    height: "10rem",
+                    boxShadow: "5rem 5rem 2px #000000",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    padding: "2rem",
+                    cursor: "pointer",
+                    opacity: 0.5,
             }}
-        />
+
+            >
+                <h1 style={{ textAlign: 'center', fontSize: 15, fontWeight: 'bold' }}>
+                   Welcome to the glitch cade!
+                </h1>
+            </div>
+
+
     </Html>
     );
 }

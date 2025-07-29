@@ -3,18 +3,19 @@ import PlayerCube from "./PlayerCube";
 import CameraController from "./CameraController";
 import { EffectComposer, Bloom , Glitch} from '@react-three/postprocessing';
 import {useSpring} from "@react-spring/three";
-import {useState} from "react";
+import {useMemo, useRef, useState} from "react";
+import CornerCircle from "./CornerCircle.jsx";
+import Snow from "./Snow.jsx";
 
 
 export default function TVScene() {
-
     const [hovered, setHovered] = useState(false);
     const handlePointerOver = () =>  setHovered(true);
 
     const handlePointerOut = () => setHovered(false);
 
     return (
-        <Canvas shadows camera={{ position: [0, 2, 5], fov: 75 }}>
+        <Canvas shadows camera={{ position: [0, 2, 5], fov: 75 }} style={{ width: "100vw", height: "100vh", position:"fixed", top:0, left:0 }}>
             <ambientLight intensity={0.5} />
             <directionalLight position={[10, 10, 10]} intensity={0.8} />
             <pointLight position={[10, 10, 10]} />
@@ -44,6 +45,8 @@ export default function TVScene() {
 
             <CameraController />
             <PlayerCube />
+            <CornerCircle />
+            <Snow count={120} />
         </Canvas>
     );
 }

@@ -5,9 +5,12 @@ import { useSpring, a } from '@react-spring/three';
 import { EffectComposer, Glitch } from '@react-three/postprocessing';
 import { PerspectiveCamera, PositionalAudio } from '@react-three/drei'
 import {Text} from "@react-three/drei"
+import {useNavigate} from "react-router-dom";
 import BlossomBox from './BlossomBox';
 let running = true;
 let intensity = 250
+
+
 
 export default function PlayerCube() {
     const ref = useRef();
@@ -16,6 +19,7 @@ export default function PlayerCube() {
     const [isBig, setIsBig] = useState(false);
     const [hovered, setHovered] = useState(false);
     const light = new THREE.PointLight(0xffffff, 1, 100);
+    const navigate = useNavigate();
 
     light.position.set(0, 0, 0);
     light.castShadow = true;
@@ -35,6 +39,7 @@ export default function PlayerCube() {
         if (clickCounter >= 15) {
             running = false;
             setIsTransitioning(true);
+            setFinished(true)
         }
     }, [clickCounter]);
 
@@ -105,7 +110,7 @@ export default function PlayerCube() {
     useEffect(() => {
         if (finished) {
            console.log("switching scene");
-
+            navigate("/a")
         }
     })
 

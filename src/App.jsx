@@ -5,6 +5,7 @@ import Nav from "./components/elements/Nav.jsx";
 import Roblox from "./components/pages/Roblox.jsx";
 import Godot from "./components/pages/Godot.jsx";
 import About from "./components/pages/About.jsx";
+import AboutMain from "./components/pages/AboutMPage.jsx";
 import './App.css';
 
 
@@ -13,7 +14,7 @@ const routes = [
     { path: '/roblox', element: <Roblox /> },
     { path: '/godot', element: <Godot /> },
     { path: '/about', element: <About /> },
-    { path: '/a', element: <About /> },
+    { path: '/a', element: <AboutMain /> },
 
 ];
 
