@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Space+Grotesk:wght@300..700&display=swap');
+
+@keyframes risingSmoke {
+  from { background-position: 100% , 0%; }
+  to   { background-position: 0% 0%, 100%; }
+}
+
+.smoke-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(to top, #000000, #0b1825, #aec0e7);
+  background-size: 100% 200%;
+  animation: risingSmoke 6s ease-in-out infinite;
+}
+
+.about-second-half {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 10vh 2rem;
+  background: linear-gradient(to top, #000000, #030b17, #192433);
+  position: fixed;
+  overflow: hidden;
+  width: 100vw;
+
+
+  height: 100vh;
+  animation: risingSmoke 6s ease-in-out infinite;
+}
+
+.thought {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  color: #feffff;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  width: 60%;
+}
+
+@media (max-width: 576px) {
+  .about-second-half {
+    gap: 1rem;
+  }
+}
+

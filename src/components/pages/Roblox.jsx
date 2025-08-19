@@ -2,9 +2,9 @@ import {Card, CardActions, CardHeader, CardMedia, Typography} from "@mui/materia
 import CardContent from "@mui/material/CardContent";
 import React, {useState, useEffect} from 'react';
 import {motion} from "framer-motion";
-import './Roblox.css'
+import './css/Roblox.css'
 
-import components from "./Datatables/Roblox.jsx";
+import components from "./Datatables/RobloxDatatable.jsx";
 const data = components()
 
 function Roblox() {

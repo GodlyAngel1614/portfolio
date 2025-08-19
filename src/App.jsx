@@ -4,18 +4,23 @@ import Home from "./components/pages/Home.jsx";
 import Nav from "./components/elements/Nav.jsx";
 import Roblox from "./components/pages/Roblox.jsx";
 import Godot from "./components/pages/Godot.jsx";
-import About from "./components/pages/About.jsx";
-import AboutMain from "./components/pages/AboutMPage.jsx";
+import About from "./components/pages/about/About.jsx";
+import AboutMain from "./components/pages/about/AboutMPage.jsx";
 import './App.css';
-
+import TestFile from "./components/pages/roblox/TestFile.jsx";
+import VideoLoad from "./components/pages/roblox/Videos.jsx";
 
 const routes = [
     { path: '/', element: <Home /> },
-    { path: '/roblox', element: <Roblox /> },
+    { path: '/roblox', element: <TestFile /> },
     { path: '/godot', element: <Godot /> },
     { path: '/about', element: <About /> },
     { path: '/a', element: <AboutMain /> },
 
+        {/*  Roblox Pages  */},
+
+    {path: "/room/:type", element: <VideoLoad /> },
+    {path: "/back", element: <TestFile /> },
 ];
 
 function App() {

@@ -1,6 +1,6 @@
 import React from 'react';
 import {motion} from "framer-motion";
-import  "./Home.css"
+import  "./css/Home.css"
 import {Link} from "react-router-dom"
 const MotionLink = motion.create(Link)
 import robloxLogo from "../../assets/robloxLogo.png"
