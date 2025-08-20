@@ -7,7 +7,7 @@ import { useFrame } from "@react-three/fiber";
 import {useNavigate} from "react-router-dom";
 
 
-const buttonLabels = ["Combat Systems", "Discord", "Abilities", "Leaderboard", "Cutscenes", "Horror", "Cozy"];
+const buttonLabels = ["Combat Systems", "Abilities", "Leaderboard", "Cutscenes", "Horror", "Cozy", "Discord"];
 const radius = 2.5;
 
 export default function Orb() {

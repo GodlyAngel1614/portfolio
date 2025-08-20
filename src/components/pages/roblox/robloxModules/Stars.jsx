@@ -21,6 +21,8 @@ export default function Stars({ count = 100 }) {
 
 
 
+
+
     return (
         <group ref={Stars}>
             {positions.map((flake, i) => (
