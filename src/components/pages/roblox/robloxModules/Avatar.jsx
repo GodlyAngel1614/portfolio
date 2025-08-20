@@ -1,8 +1,7 @@
 import { useGLTF } from '@react-three/drei'
-import { useEffect } from 'react'
 
 export function Avatar(props) {
-    const { scene } = useGLTF('../Character.glb')
+    const { scene } = useGLTF('models/Character.glb')
 
     return (
         <primitive
