@@ -1,35 +1,7 @@
 import React from "react";
 import {motion} from "framer-motion";
 import {useNavigate, useParams} from "react-router-dom";
-
-
-import V2 from "./videos/video1.mp4"
-
-
-import D1 from "./videos/DL/2.mp4"
-import D2 from "./videos/DL/1.mp4"
-import F1 from "./videos/FPS/1.mp4"
-
-const allRooms = {
-    "Combat Systems": [
-        {id: 1, hasVideo: true, videoSrc: D1},
-        {id: 2, hasVideo: false},
-        {id: 3, hasVideo: true, videoSrc: V2},
-        {id: 4, hasVideo: true, videoSrc: V2},
-    ],
-    "Discord": [
-        {id: 4, hasVideo: true, videoSrc: '/videos/music1.mp4'},
-        {id: 5, hasVideo: false},
-        {id: 6, hasVideo: true, videoSrc: '/videos/music2.mp4'},
-    ],
-    "Abilities": [
-        {id: 7, hasVideo: true, videoSrc: D1},
-        {id: 8, hasVideo: false},
-        {id: 9, hasVideo: true, videoSrc: D2},
-        {id: 10, hasVideo: true, videoSrc: F1},
-    ]
-};
-
+import {allRooms} from "./robloxModules/allRooms.jsx";
 
 function BackButton() {
     const navigate = useNavigate();
@@ -65,7 +37,7 @@ function TV({tvItems, onClick}) {
             <div
                 style={{
                     display: 'grid',
-                    position: 'fixed',
+                    position: 'relative',
                     gridTemplateColumns: 'repeat(2, 2fr)',
                     gap: '3rem',
                     justifyContent: 'center',
@@ -136,7 +108,7 @@ function TV({tvItems, onClick}) {
 
 
 function VideoRoomScene() {
-    const {type} = useParams();
+    const { type } = useParams();
     const tvData = allRooms[type] || [];
 
     const handleTVClick = (id) => {
@@ -144,48 +116,41 @@ function VideoRoomScene() {
     };
 
     return (
+        <div
+            style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',     // ✅ centers TVs horizontally
+                width: '100%',
+                minHeight: '100vh',       // allow scroll if taller than viewport
+                backgroundColor: 'black', // or transparent if you want
+                overflowY: 'auto',        // ✅ scroll like a feed
+                padding: '2rem',
+                boxSizing: 'border-box',
+            }}
+        >
+            <h1 style={{ color: 'white', marginBottom: '14rem' }}>{type}</h1>
+
+            <TV tvItems={tvData} onClick={handleTVClick} />
+        </div>
+    );
+}
+
+export default function VideoLoad() {
+    return (
         <>
             <div
                 style={{
                     display: 'flex',
                     flexDirection: 'column',
-                    width: '100vw',
-                    height: '100vh',
-                    backgroundColor: 'transparent',
-                    overflow: 'hidden',
+                    width: '100%',
+                    minHeight: '100vh',
                 }}
-            />
+            >
+                <VideoRoomScene />
+            </div>
 
-            <TV tvItems={tvData} onClick={handleTVClick}/>
-            <ambientLight intensity={0.3}/>
-            <pointLight position={[0, 5, 0]} intensity={1.2}/>
-        </>
-    );
-}
-
-
-export default function VideoLoad() {
-    return (
-        <>
-        <div
-            style={{
-            position: 'fixed',
-            display: 'flex',
-            width: '100vw',
-            height: '100vh',
-            alignItems: 'center',
-            alignContent: 'bottom',
-            justifyContent: 'center',
-            alignSelf: 'bottom',
-            overflow: 'hidden',
-        }}
-
-
-        >
-            <VideoRoomScene />
-        </div>
-
-          <BackButton />
+            <BackButton />
         </>
     );
 }
