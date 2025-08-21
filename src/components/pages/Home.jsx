@@ -1,10 +1,11 @@
 import React from 'react';
 import {motion} from "framer-motion";
-import  "./css/Home.css"
+import "./css/Home.css"
 import {Link} from "react-router-dom"
-const MotionLink = motion.create(Link)
 import robloxLogo from "../../assets/robloxLogo.png"
 import godotLogo from "../../assets/godotLogo.png"
+
+const MotionLink = motion.create(Link)
 
 function Home() {
     return (
@@ -49,7 +50,7 @@ function Home() {
                                     -150, -10, -30, 50, 90, 100, 150, 200, 250, 300, -150
                                 ],
                                 opacity: [0.05, 0],
-                            }}
+                    }}
                             transition={{
                                 repeat: Infinity,
                                 duration: 10,
@@ -143,6 +144,18 @@ function Home() {
 
                     >
                         Websites
+                    </MotionLink>
+
+                    <MotionLink className={"link"} to={"/web"}
+
+                    >
+                        Python/Java/C##/Renpy
+                    </MotionLink>
+
+                    <MotionLink className={"link"} to={"/web"}
+
+                    >
+                        Discord
                     </MotionLink>
                 </li>
             </motion.div>
