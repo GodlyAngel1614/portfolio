@@ -1,4 +1,5 @@
 import {motion} from 'framer-motion';
+import "./Discord.css"
 
 export default function Discord() {
     return (

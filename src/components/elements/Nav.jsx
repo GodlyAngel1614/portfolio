@@ -24,7 +24,7 @@ function Nav() {
                         About
                     </MotionLink >
 
-                    <MotionLink style={{color: "#fff", textDecoration: "none"}} to={"/"}
+                    <MotionLink style={{color: "#fff", textDecoration: "none"}} to={"/contact"}
                                 animate={{
                                     color: []
                                 }}

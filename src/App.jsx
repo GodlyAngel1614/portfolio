@@ -10,6 +10,7 @@ import VideoLoad from "./components/pages/roblox/Videos.jsx";
 
 import Discord from "./components/pages/discord/Discord.jsx";
 import Websites from "./components/pages/websites/Websites.jsx";
+import ContactUs from "./components/pages/contact/Contact.jsx";
 
 
 const routes = [
@@ -22,7 +23,11 @@ const routes = [
     { path: '/about', element: <About /> },
     { path: '/a', element: <AboutMain /> },
 
-        {/*  Roblox Pages  */},
+       {/*  Contact  */},
+
+    { path: '/contact', element: <ContactUs /> },
+
+    {/*  Roblox Pages  */},
 
     { path: '/roblox', element: <TestFile /> },
     { path: "/room/:type", element: <VideoLoad /> },
