@@ -1,4 +1,7 @@
 import './Contact.css'
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import {CardActions} from "@mui/material";
 
 export default function ContactUs() {
     return (
@@ -13,6 +16,18 @@ export default function ContactUs() {
                     marginWidth="0"
                 ></iframe>
             </div>
+
+            <Card
+                style={{
+                    width: '50%',
+                    height: '15vh',
+                }}
+            >
+
+            </Card>
+            <h1 style={{color:"white"}} >
+                Contact information
+            </h1>
         </>
     )
 }
