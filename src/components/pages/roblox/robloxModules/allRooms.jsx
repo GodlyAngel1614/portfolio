@@ -60,11 +60,40 @@ import F11 from "../videos/FPS/11.mp4"
 
 export const allRooms = {
     "Combat Systems": [
-        {id: 1, hasVideo: true, videoSrc: C1},
-        {id: 2,  hasVideo: true, videoSrc: C2},
-        {id: 3, hasVideo: true, videoSrc: C3},
-        {id: 4, hasVideo: true, videoSrc: C4},
-        {id: 5, hasVideo: true, videoSrc: C5},
+        {id: 1, hasVideo: true, videoSrc: C1,
+            description: "Sequence of attacks from the lightsaber" +
+                "\nThe damage rate is: 10-15 randomized per hit" +
+                "\n12 sword attacks before your sword stamina (yellow bar) is completely depleted" +
+                "\nYour energy is depleted by 10 per swing",
+            codeSnippet: ""
+        },
+        {id: 2,  hasVideo: true, videoSrc: C2,
+            description: "Actions:" +
+                "\nDouble jumping after your halfway in the air:" +
+                "\nregular jumps takes 5 stamina, double jump takes 10" +
+                "\nStamina increase: increases by a rate of 2.5 per second" +
+                "\nPlayer dash: decreases stamina by 10",
+            codeSnippet: ""
+        },
+        {id: 3, hasVideo: true, videoSrc: C3,
+            description: "Light saber throw:" +
+                "\nRange = 50" +
+                "\nCooldown = 5" +
+                "\nStamina cost = 15 per throw" +
+                "\nDamage = 30 decreasing by 5 as distance from player increases",
+            codeSnippet: ""},
+        {id: 4, hasVideo: true, videoSrc: C4,
+            description: "Block + Stun" +
+                "\nif the enemy has started blocking within 2 seconds they will be able to perform a stun + parry" +
+                "\nThe player will fall back",
+            codeSnippet: ""},
+        {id: 5, hasVideo: true, videoSrc: C5,
+            description: "Blaster: " +
+                "The player blasts the target and a projectile projects from the barrel of the gun" +
+                "If it's a head shot it'll play a specific sound and do 30 damage" +
+                "If it's a body shot it'll play the default sound and do 15 damage" +
+                "",
+            codeSnippet: ""},
         {id: 6, hasVideo: true, videoSrc: C6},
         {id: 7, hasVideo: true, videoSrc: C7},
         {id: 8, hasVideo: false},
@@ -92,8 +121,12 @@ export const allRooms = {
         {id: 1, hasVideo: false},
     ],
     "Leaderboard": [
-        {id: 1, hasVideo: true, videoSrc: L1},
-        {id: 2, hasVideo: true, videoSrc: L2},
+        {id: 1, hasVideo: true, videoSrc: L1,
+            description: "This has a descripto"
+        },
+        {id: 2, hasVideo: true, videoSrc: L2,
+            description: "this too."
+        },
         {id: 3, hasVideo: false},
     ],
     "Cozy": [
@@ -114,6 +147,7 @@ export const allRooms = {
     "Cutscenes": [
         {id: 1, hasVideo: false},
     ],
+
     "Random": [
         {id: 1, hasVideo: true, videoSrc: R1},
         {id: 2, hasVideo: true, videoSrc: R2},

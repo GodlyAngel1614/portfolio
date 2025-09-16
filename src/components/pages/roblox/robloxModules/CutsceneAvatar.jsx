@@ -19,7 +19,7 @@ function CutsceneAvatar() {
     useFrame(() => {
         if (step === 0 && avatarRef.current) {
             // Walk forward along the z-axis
-            avatarRef.current.position.z -= 0.05
+            avatarRef.current.position.z -= 0.15
 
             // Stop walking when z reaches 20
             if (avatarRef.current.position.z <= 0) {

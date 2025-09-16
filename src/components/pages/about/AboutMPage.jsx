@@ -70,9 +70,6 @@ function MyCardFunc() {
 
 
 function AboutMain() {
-    const [card, currentCardIndex, setCardIndex] = useState(0)
-
-
     return (
 
         <div className="about-background">
