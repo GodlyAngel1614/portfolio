@@ -214,8 +214,14 @@ function TV({ tvItems, onClick }) {
                                     scrollbarWidth: "thin",
                                 }}
                             >
-                                <p style={{ lineHeight: "3.3" }}>{modal.content}</p>
-                                <img src={modal.image} alt={""} style={{ width: "100%", height: "100%", margin: "5px"}} />
+                                <p style={{ lineHeight: "3", whiteSpace: "pre-line" }}>
+                                    {modal.content}
+                                </p>
+                                <img
+                                    src={modal.image}
+                                    alt=""
+                                    style={{ width: "100%", height: "100%", margin: "5px" }}
+                                />
                             </div>
 
                             <button
