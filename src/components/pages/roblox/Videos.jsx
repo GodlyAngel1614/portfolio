@@ -40,6 +40,7 @@ function TV({ tvItems, onClick }) {
         content: null,
         image: null,
     });
+    const [isZoomed, setIsZoomed] = useState(false);
 
     return (
         <>
@@ -63,7 +64,7 @@ function TV({ tvItems, onClick }) {
                             color: "white",
                             border: "1px solid white",
                             width: "500px",
-                            height: "450px",
+                            height: "600px",
                             boxSizing: "border-box",
                             cursor: "pointer",
                             overflow: "hidden",
@@ -81,12 +82,16 @@ function TV({ tvItems, onClick }) {
                             <motion.div
                                 style={{
                                     width: "100%",
-                                    height: "95%",
+                                    height: "75%",
                                     objectFit: "cover",
                                     borderRadius: "8px",
                                     border: "1px solid transparent",
-                                }}
+                                    marginTop: "10px"
+                            }}
                             >
+                                <h2 style={{ marginTop: "0", fontWeight: "600" }}>
+                                    {tv.title}
+                                </h2>
                                 {/* Description Button */}
                                 <button
                                     onClick={(e) => {
@@ -96,6 +101,8 @@ function TV({ tvItems, onClick }) {
                                             content:
                                                 tv.description ||
                                                 "No description provided. Add one to this item.",
+                                            image:
+                                                tv.codeSnippet
                                         });
                                     }}
                                     style={{
@@ -105,7 +112,7 @@ function TV({ tvItems, onClick }) {
                                         fontSize: "1rem",
                                         cursor: "pointer",
                                         padding: "6px 10rem",
-                                        margin: '2px',
+                                        margin: '14px',
                                         transition: "color 0.2s ease, transform 0.1s ease",
                                         fontFamily: "'Poppins', sans-serif",
                                         borderRadius: "10px 10px",
@@ -219,9 +226,46 @@ function TV({ tvItems, onClick }) {
                                 </p>
                                 <img
                                     src={modal.image}
-                                    alt=""
-                                    style={{ width: "100%", height: "100%", margin: "5px" }}
+                                    alt={modal.image}
+                                    style={{
+                                        width: "100%",
+                                        height: "100%",
+                                        margin: "5px",
+                                        cursor: "zoom-in",
+                                        objectFit: "cover",
+                                    }}
+                                    onClick={() => setIsZoomed(true)}
                                 />
+
+                                {isZoomed && (
+                                    <div
+                                        onClick={() => setIsZoomed(false)}
+                                        style={{
+                                            position: "fixed",
+                                            top: 0,
+                                            left: 0,
+                                            width: "100vw",
+                                            height: "100vh",
+                                            backgroundColor: "rgba(0,0,0,0.8)",
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            cursor: "zoom-out",
+                                            zIndex: 9999,
+                                        }}
+                                    >
+                                        <img
+                                            src={modal.image}
+                                            alt={modal.image}
+                                            style={{
+                                                maxWidth: "90%",
+                                                maxHeight: "90%",
+                                                borderRadius: "10px",
+                                                boxShadow: "0 0 20px rgba(0,0,0,0.5)",
+                                            }}
+                                        />
+                                    </div>
+                                )}
                             </div>
 
                             <button

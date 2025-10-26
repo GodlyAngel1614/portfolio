@@ -21,6 +21,13 @@ import D2  from "../videos/Discord/2.mp4"
 
 // Abilities
 
+import Fireball from "../videos/Abilities/Fireball.mp4"
+import WG from "../videos/Abilities/WG.mp4"
+import FCS from "../Images/Abilities/Fireball.png"
+import WGS from "../Images/Abilities/WGS.png"
+import MB from "../videos/Abilities/MB.mp4"
+import MBS from "../Images/Abilities/MBS.png"
+
 // Random
 
 import R1 from "../videos/Random/1.mp4"
@@ -56,6 +63,14 @@ import F8 from "../videos/FPS/8.mp4"
 import F9 from "../videos/FPS/9.mp4"
 import F10 from "../videos/FPS/10.mp4"
 import F11 from "../videos/FPS/11.mp4"
+
+// Tower Defense Game
+
+import T1 from "../videos/TDG/1.mp4"
+import T2 from "../videos/TDG/2.mp4"
+import T3 from "../videos/TDG/3.mp4"
+import T4 from "../videos/TDG/4.mp4"
+import T5 from "../videos/TDG/5.mp4"
 
 
 export const allRooms = {
@@ -139,7 +154,29 @@ export const allRooms = {
         {id: 3, hasVideo: false},
     ],
     "Abilities": [
-        {id: 1, hasVideo: false},
+        {id: 1, hasVideo: true, videoSrc: Fireball,
+            description: "Fireball can either be pointed towards the ground or an enemy npc" +
+                "\n it'll fling enemies far within 10 studs of the area site" +
+                "\n damage depends on enemy resistance, the level of the mage, whether the fireball is upgraded or not etc.",
+            title: "Fireball",
+        codeSnippet: FCS},
+        {id: 2, hasVideo: true, videoSrc: WG,
+            description: "Winter's grasp can only be used on an enemy" +
+                "\n if not pointing towards an enemy the ability will not activate" +
+                "\n depending on resistance to the element from the enemy they'll be more or less likely to freeze" +
+                "\n for enemies with no resistance towards it, its 50/50 on whether they'll freeze." +
+                "\n The body will turn blue and they won't be able to move." +
+                "\n If brittle then they're walkspeed will decrease by attack speed for 2-5 seconds.",
+            codeSnippet: WGS,
+            title: "Winter's Grasp"
+        },
+        {id: 3, hasVideo: true, videoSrc: MB,
+            description: "Mind blast will blast enemies within radius away from the player" +
+                "\n the radius increases with does stun chance as the ability is upgraded" +
+                "\n This is a non-damage based ability and no matter the upgrade will never harm enemies.",
+            codeSnippet: MBS,
+            title: "Mind Blast"
+        },
     ],
     "Leaderboard": [
         {id: 1, hasVideo: true, videoSrc: L1,
@@ -208,7 +245,40 @@ export const allRooms = {
     "Cutscenes": [
         {id: 1, hasVideo: false},
     ],
-
+    "Tower Defense": [
+        {id: 1, hasVideo: true, videoSrc: T1,
+            description: "Step up to a pad and open the Summon UI" +
+                "\nYou can see the chances of getting what and pull 10 for 900 and 1 for 100" +
+                "\n The ui is animated and all ui was animated and made by me."
+        },
+        {id: 2, hasVideo: true, videoSrc: T2,
+            description: "See your units displayed in your saved inventory" +
+                "\n You can equip the best which is determined by rarity" +
+                "\n You see how much you can earn if you sell the unit" +
+                "\n You bulk sell the units and it clears them from your inventory." +
+                "\n A is for common units" +
+                "\n B is for uncommon units" +
+                "\n C is for rare units" +
+                "\n D is for super units" +
+                "\n E is for extrodinary units" +
+                "\n F is for brainrot supreme units."
+        },
+        {id: 3, hasVideo: true, videoSrc: T3,
+            description: "Equip best units determined by rarity"
+        },
+        {id: 4, hasVideo: true, videoSrc: T4,
+            description: "Step on the teleport pad it displays the faces of all the players in the queue" +
+                "\nIf its one player they can auto start" +
+                "\nIt takes 10 seconds to teleport with one person" +
+                "\n20 for 2 and above if all choose to start it skips and teleports them all."
+        },
+        {id: 5, hasVideo: true, videoSrc: T5,
+            description: "Select the mode" +
+                "\nWait through intermission or skip if all players agree to it" +
+                "\nPlace and rotate units in the viable spots" +
+                "\n the waves will start"
+        },
+    ],
     "Random": [
         {id: 1, hasVideo: true, videoSrc: R1,
         description: "This was a commision from a client to create a system similar to yandere dev " +
