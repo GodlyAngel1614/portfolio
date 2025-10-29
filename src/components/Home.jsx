@@ -11,9 +11,9 @@ const MotionLink = motion.create(Link)
 function hostLinks() {
     const links = [
         {id: 1, Name: "Roblox", img: robloxLogo, link: "/roblox"},
-        {id: 2, Name: "Godot", img: godotLogo, link: "/godot"},
-        {id: 3, Name: "Websites", img: "", link: "/website"},
-        {id: 4, Name: "Discord", img: discordLogo, link: "/discord"},
+       // {id: 2, Name: "Godot", img: godotLogo, link: "/godot"},
+       // {id: 3, Name: "Websites", img: "", link: "/website"},
+       // {id: 4, Name: "Discord", img: discordLogo, link: "/discord"},
     ]
 
     return (
