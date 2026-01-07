@@ -1,5 +1,3 @@
-# 💼 Sakura (roblox displaymame) / Alex's Developer Portfolio
-
 Discord Username: Un6dinary
 
 Discord Displayname: yagami_149
@@ -8,7 +6,7 @@ Roblox Username: Heavenslay2020
 
 Roblox Displayname: Sakura
 
-This is my current portfolio website it'll be going through changes as i do more projects and add them to my showcase.
+This is my current portfolio website meant to showcase projects for my freelancing work it'll be going through changes as i do more projects and add them to my showcase.
 
 There are videos that you can scroll through and they are organized by category, whether a random project that was done a while ago or a commision done by client done more recently.
 
@@ -21,18 +19,18 @@ The purpose of this website is designed to showcase my work both in roblox scrip
 
 There is an inspect button over every video that will give you a descriptor of what I worked on and didn't work on.
 
-## 🛠️ Tech Stack
-⚛️ React (Vite)
+## What i used:
+React (Vite)
 
-🎞️ Framer Motion
+Framer Motion
 
-🎨 Material UI
+Material UI
 
-🎮 Roblox (Luau)
+Roblox (Luau)
 
-🌐 Discord API
+ Discord API
 
-☁️ Vercel for deployment
+Vercel for deployment
 
 [![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
 
