@@ -27,6 +27,13 @@ import FCS from "../Images/Abilities/Fireball.png"
 import WGS from "../Images/Abilities/WGS.png"
 import MB from "../videos/Abilities/MB.mp4"
 import MBS from "../Images/Abilities/MBS.png"
+import MM from "../videos/Abilities/MainMenu.mp4"
+import MG from "../videos/Abilities/MageGameplay.mp4"
+import WarriorG from "../videos/Abilities/WarriorGameplay.mp4"
+import Slash from "../videos/Abilities/Slash.mp4"
+import SlashImage from  "../Images/Abilities/SlashImage.png"
+import DeathScreen from "../videos/Abilities/DeathScreen.mp4"
+import Death from "../Images/Abilities/Death.png"
 
 // Random
 
@@ -37,7 +44,14 @@ import R4 from "../videos/Random/4.mp4"
 import R5 from "../videos/Random/5.mp4"
 import R6 from "../videos/Random/6.mp4"
 import R7 from "../videos/Random/7.mp4"
-import R8 from "../videos/Random/8.mp4"
+
+// Obbies
+
+import Obby1 from "../videos/Obby/1.mp4"
+import Obby1CodeImage from "../Images/Obby/1.png"
+import Obby2 from "../videos/Obby/2.mp4"
+import Obby2CodeImage from "../Images/Obby/2.png"
+import Obby3 from "../videos/Obby/3.mp4"
 
 // Cozy
 
@@ -177,7 +191,7 @@ export const allRooms = {
         },
         {id: 3, hasVideo: false},
     ],
-    "Abilities": [
+    "Ability Game Showcase": [
         {id: 1, hasVideo: true, videoSrc: Fireball,
             description: "Fireball can either be pointed towards the ground or an enemy npc" +
                 "\n it'll fling enemies far within 10 studs of the area site" +
@@ -200,6 +214,51 @@ export const allRooms = {
                 "\n This is a non-damage based ability and no matter the upgrade will never harm enemies.",
             codeSnippet: MBS,
             title: "Mind Blast"
+        },
+        {id: 4, hasVideo: true, videoSrc: Slash,
+            description: "The Slash ability is currently the only Warrior ability." +
+                "\nIt has multiple attack animations that play in sequence." +
+                "\nHitting NPCs triggers a blood spray VFX." +
+                "\nA hitbox detector is used to determine which NPCs are struck by the sword.",
+            codeSnippet: SlashImage,
+            title: "Warrior Slash"
+        },
+        {id: 5, hasVideo: true, videoSrc: MM,
+            description: "The main menu presents an overview of the world with animated gradients on the title and buttons." +
+                "\nPlayers can start a new game to enter the Character Creation Menu, where they can track current EXP, EXP needed for the next level, and allocate points to attributes affecting damage." +
+                "\nThe Class Menu allows players to select between Warrior, Mage, and Rogue classes.",
+            codeSnippet: "",
+            title: "Main Menu"
+        },
+        {id: 6, hasVideo: true, videoSrc: MG,
+            description: "The player begins as a Mage and enters the 'First Attack' cutscene." +
+                "\nTwo Hurlocks spawn at the far end of the path." +
+                "\nUsing Fireball, the player can damage and knock back enemies; any enemy remaining in the fire takes continuous damage until the effect ends." +
+                "\nBoth Hurlocks are defeated using Fireball and Winter's Grasp, which applies sustained freezing damage." +
+                "\nEach Hurlock grants 25 EXP, adding to the player's total EXP and progress toward the next level." +
+                "\nUpon clearing the enemies, the 'Entering The Game' cutscene plays." +
+                "\nBlood effects and shimmering VFX indicate defeated Hurlocks and loot drops.",
+            codeSnippet: "",
+            title: "Mage gameplay"
+        },
+        {id: 7, hasVideo: true, videoSrc: WarriorG,
+            description: "The player starts as a Warrior and enters the 'First Attack' cutscene." +
+                "\nThey equip their sword and use the Slash ability." +
+                "\nThis is an instant kill ability for Warriors, as it is their only current ability." +
+                "\nHitbox detection allows it to strike multiple nearby enemies simultaneously." +
+                "\nAfter defeating the Hurlocks, the 'Entering The Game' cutscene plays." +
+                "\nThe player earns 50 EXP from the two Hurlocks, which stacks with any previous EXP earned in the Mage gameplay.",
+            codeSnippet: "",
+            title: "Warrior gameplay"
+        },
+        {id: 8, hasVideo: true, videoSrc: DeathScreen,
+            description: "When the player dies, their body falls and plays a fallen animation while the camera pans to the sky." +
+                "\nA black death screen appears with a message related to the cause of death; for this instance: 'Make sure to block next time'." +
+                "\nThree different sounds may play upon death, and the player can revive with no cost." +
+                "\nThe UI is created using ROACT, which triggers events on player death and notifies when it is safe to respawn." +
+                "\nOther players in-game see the dead player's body slowly turning translucent on the ground.",
+            codeSnippet: Death,
+            title: "Death Screen"
         },
     ],
     "Leaderboard": [
@@ -279,7 +338,6 @@ export const allRooms = {
             codeSnippet: ""
         }
     ],
-
     "Deltarune System": [
         {
             id: 1,
@@ -293,7 +351,6 @@ export const allRooms = {
             codeSnippet: ""
         }
     ],
-
     "Tower Defense": [
         {id: 1, hasVideo: true, videoSrc: T1,
             description: "Step up to a pad and open the Summon UI" +
@@ -338,7 +395,8 @@ export const allRooms = {
         description: "This was a commision from a client to create a system similar to yandere dev " +
             "\nThe player can equip a knife and a custom proximity prompt ui is used with full functionality " +
             "\nif the player clicks on it the npc will fall and if fallen on a valid surface blood will pool from the npcs body" +
-            "\nIf they don't touch the surface of something the blood pool does not hover mid-air or other weird issues"
+            "\nIf they don't touch the surface of something the blood pool does not hover mid-air or other weird issues",
+            title: "Proximity Knife Interaction System"
         },
         {id: 2, hasVideo: true, videoSrc: R2,
             description: "Phoenix Wright Trilogy inspired main menu system" +
@@ -347,10 +405,13 @@ export const allRooms = {
                 "\nMain menu took inspiration from when you first open the application and it's not full screen" +
                 "\nThe buttons are animated to have an overlay and are fully functional" +
                 "\nThe camera will pan around the room as the player sets their settings, or goes through which case they want to play" +
-                "\nThis was a random project i decided to do for fun!"
+                "\nThis was a random project i decided to do for fun!",
+            title: "Phoenix Wright Inspired Main Menu"
         },
         {id: 3, hasVideo: true, videoSrc: R3,
-            description: "Melee sequenced hits"},
+            description: "Melee sequenced hits",
+            title: "Melee Combo System"
+        },
         {id: 4, hasVideo: true, videoSrc: R4,
             description: "Unfinished commision this was inspired by games like 'blow the biggest gum bubble' " +
                 "\n The player can engage in automated fights with npcs and how much damage the player does is calculated by their strength" +
@@ -360,12 +421,15 @@ export const allRooms = {
                 "\n if your strength is too low it will not let you punch higher punching bags which give more strength" +
                 "\n if you don't meet requirements a ui will display at the bottom with an error msg: " +
                 "\n Oops! Looks like your strength isn't quite there yet😓" +
-                "\n are you trying to die? That npcs way too strong! 😱😱"},
+                "\n are you trying to die? That npcs way too strong! 😱😱",
+            title: "Strength based Combat + Progression"
+        },
         {id: 5, hasVideo: true, videoSrc: R5,
             description: "A commision using HD commands" +
                 "\nThe player equips a hat and if they press F they can fly around using the walking keybinds (WASD, JOYSTICK)" +
                 "\nIf they press remove hat then they'll stop flying and the hat will be removed" +
-                "\ntyping this in chat as well removes it"
+                "\ntyping this in chat as well removes it",
+            title: "Hat Flight System"
         },
 
         {id: 6, hasVideo: true, videoSrc: R6,
@@ -373,27 +437,47 @@ export const allRooms = {
                 "It bounces with a blue highlight which can be changed " +
                 "It can be used to work with a round system, like brawlhalla once you equip another weapon the other weapon is no longer avaliable " +
                 "It can be expanded upon easily and add other weapons and different weapon types " +
-                "If the weapon is custom made it's easy to change the way the player holds it for some reason you need to change it for custom config. "
+                "If the weapon is custom made it's easy to change the way the player holds it for some reason you need to change it for custom config. ",
+            title: "Weapon Drop & Equip System"
         },
         {id: 7, hasVideo: true, videoSrc: R7,
             description: "This was a main menu made out of boredom based on the one from schedule IV" +
                 "The camera shakes and blurs with the beat of the music " +
                 "The bus is constantly flashing it was meant to be like party lights " +
-                "It teleports you to a baseplate but that's all. "
-        },
-
-        {id: 8, hasVideo: true, videoSrc: R8,
-            description: "Basic red light green light game " +
-                "If your walking while the screen is red you die "
+                "It teleports you to a baseplate but that's all. ",
+            title: "Music-Synced Party Main Menu"
         },
     ],
 
     "Obbies": [
-        {id: 1, hasVideo: true, videoSrc: R8,
+        {id: 1, hasVideo: true, videoSrc: Obby1,
             description: "Basic red light green light game " +
                 "If your walking while the screen is red you die ",
             title: "Red Light Green Light"
         },
+        {
+            id: 2,
+            hasVideo: true,
+            videoSrc: Obby2,
+            title: "Moving orbs",
+            description:
+                "You start the obby and are met with these rotating orbs" +
+                "\n It's a randomized value between which ones will stay still and which ones will move" +
+                "\n The orbs are neon and changing color based on a table of pre selected values" +
+                "\n Bounce time is cutomizable as long as orbit time",
+            codeSnippet: Obby1CodeImage
+        },
+        {
+            id: 3,
+            hasVideo: true,
+            videoSrc: Obby3,
+            title: "Rotating Red Beams",
+            description:
+                "You jump onto this platform and the lazers are spinning along " +
+                "\n They do customizeable damage default damage is 25" +
+                "\n this is similar to those in basic obbies.",
+            codeSnippet: Obby2CodeImage
+        }
     ],
 
     "Vehicles": [
@@ -409,7 +493,7 @@ export const allRooms = {
             hasVideo: true,
             videoSrc: Sub,
             title: "Submarine System (FULL CFRAME)",
-            description: "Created for a client building a submarine game. This system replaces the original with a smooth, fully integrated design offering complete customization. It supports multiple submarines, all managed server-side using ZAP for networking."
+            description: "Created for a client building a submarine game. This system replaces the original with a smooth, fully integrated design offering complete customization. It supports multiple submarines, all managed server-side."
         },
         {
             id: 3,

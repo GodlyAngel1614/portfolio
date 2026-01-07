@@ -8,7 +8,7 @@ import {useNavigate} from "react-router-dom";
 
 
 const buttonLabels = ["Star wars combat system",
-    "Abilities",
+    "Ability Game Showcase",
     "Leaderboard",
  //   "Cutscenes",
  //   "Horror",
