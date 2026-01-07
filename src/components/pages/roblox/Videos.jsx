@@ -7,6 +7,7 @@ function BackButton() {
     const navigate = useNavigate();
 
     return (
+
         <motion.button
             style={{
                 backgroundColor: "transparent",
@@ -44,6 +45,10 @@ function TV({ tvItems, onClick }) {
 
     return (
         <>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Akronim&family=Chela+One&family=Nosifer&family=Rubik+Doodle+Shadow&family=Vast+Shadow&display=swap');
+            </style>
+
             <div
                 style={{
                     display: "grid",
@@ -87,9 +92,9 @@ function TV({ tvItems, onClick }) {
                                     borderRadius: "8px",
                                     border: "1px solid transparent",
                                     marginTop: "10px"
-                            }}
+                                }}
                             >
-                                <h2 style={{ marginTop: "0", fontWeight: "600" }}>
+                                <h2 style={{marginTop: "0", fontWeight: "600"}}>
                                     {tv.title}
                                 </h2>
                                 {/* Description Button */}
@@ -102,7 +107,7 @@ function TV({ tvItems, onClick }) {
                                                 tv.description ||
                                                 "No description provided. Add one to this item.",
                                             image:
-                                                tv.codeSnippet
+                                            tv.codeSnippet
                                         });
                                     }}
                                     style={{
@@ -167,10 +172,10 @@ function TV({ tvItems, onClick }) {
                 {modal.show && (
                     <motion.div
                         key="overlay"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 0.2 }}
+                        initial={{opacity: 0}}
+                        animate={{opacity: 1}}
+                        exit={{opacity: 0}}
+                        transition={{duration: 0.2}}
                         style={{
                             position: "fixed",
                             top: 0,
@@ -183,14 +188,14 @@ function TV({ tvItems, onClick }) {
                             alignItems: "center",
                             zIndex: 1000,
                         }}
-                        onClick={() => setModal({ ...modal, show: false })}
+                        onClick={() => setModal({...modal, show: false})}
                     >
                         <motion.div
                             key="modal"
-                            initial={{ scale: 0.9, opacity: 0 }}
-                            animate={{ scale: 1, opacity: 1 }}
-                            exit={{ scale: 0.9, opacity: 0 }}
-                            transition={{ duration: 0.25 }}
+                            initial={{scale: 0.9, opacity: 0}}
+                            animate={{scale: 1, opacity: 1}}
+                            exit={{scale: 0.9, opacity: 0}}
+                            transition={{duration: 0.25}}
                             style={{
                                 backgroundColor: "#000000",
                                 color: "white",
@@ -199,15 +204,16 @@ function TV({ tvItems, onClick }) {
                                 boxShadow: "0 4px 20px rgba(0,0,0,0.3)",
                                 maxWidth: "500px",
                                 width: "80%",
+                                fontSize: "20px",
                                 textAlign: "center",
-                                fontFamily: "'Poppins', sans-serif",
+                                fontFamily: "'Vast Shadow', sans-serif",
                                 display: "flex",
                                 flexDirection: "column",
                                 maxHeight: "80vh", // limit height
                             }}
                             onClick={(e) => e.stopPropagation()}
                         >
-                            <h2 style={{ marginBottom: "10px", fontWeight: "600" }}>
+                            <h2 style={{marginBottom: "10px", fontWeight: "600"}}>
                                 Description + Code snippet
                             </h2>
 
@@ -221,7 +227,7 @@ function TV({ tvItems, onClick }) {
                                     scrollbarWidth: "thin",
                                 }}
                             >
-                                <p style={{ lineHeight: "3", whiteSpace: "pre-line" }}>
+                                <p style={{lineHeight: "3", whiteSpace: "pre-line"}}>
                                     {modal.content}
                                 </p>
                                 <img
@@ -269,7 +275,7 @@ function TV({ tvItems, onClick }) {
                             </div>
 
                             <button
-                                onClick={() => setModal({ ...modal, show: false })}
+                                onClick={() => setModal({...modal, show: false})}
                                 style={{
                                     backgroundColor: "transparent",
                                     border: "1px solid black",
@@ -306,7 +312,7 @@ function TV({ tvItems, onClick }) {
 
 
 function VideoRoomScene() {
-    const { type } = useParams();
+    const {type} = useParams();
     const tvData = allRooms[type] || [];
 
     const handleTVClick = (id) => {
@@ -327,9 +333,13 @@ function VideoRoomScene() {
                 boxSizing: 'border-box',
             }}
         >
-            <h1 style={{ color: 'white', marginBottom: '14rem' }}>{type}</h1>
+            <h1 style={{
+                color: 'white', marginBottom: '4rem',
+                fontSize: "4rem",
+                fontFamily: "'Rubik Doodle Shadow', sans-serif",
+            }}>{type}</h1>
 
-            <TV tvItems={tvData} onClick={handleTVClick} />
+            <TV tvItems={tvData} onClick={handleTVClick}/>
         </div>
     );
 }
@@ -345,10 +355,10 @@ export default function VideoLoad() {
                     minHeight: '100vh',
                 }}
             >
-                <VideoRoomScene />
+                <VideoRoomScene/>
             </div>
 
-            <BackButton />
+            <BackButton/>
         </>
     );
 }

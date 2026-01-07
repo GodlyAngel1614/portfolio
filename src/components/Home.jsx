@@ -20,6 +20,9 @@ function hostLinks() {
         links.map((link) => {
             return (
                 <MotionLink className={"link"} to={link.link}
+                            style = {{
+                                backgroundColor: "#0b1b2c",
+                            }}
                             whileHover={{
                                 scale: [1, 1.1, 1.2, 1],
                                 textShadow: "2dvh 2dvh 1rem #000",
@@ -72,8 +75,8 @@ function Home() {
                 animate={{
                     backgroundColor: [
                         '#738a9f',
-                        '#0e2137',
-                        '#5586bd',
+                        '#0b1b2c',
+                        '#364e6c',
                     ],
 
                     opacity: [
@@ -116,7 +119,7 @@ function Home() {
 
                 <main>
                     <h1 style={{padding: "20px", margin: "30px"}} className={"title"}>
-                        Sakura's Portfolio
+                        Light Yagami's Portfolio
                     </h1>
                 </main>
 
