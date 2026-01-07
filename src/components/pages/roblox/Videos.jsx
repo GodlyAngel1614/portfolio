@@ -20,7 +20,7 @@ function BackButton() {
                 borderRadius: '8px',
                 cursor: 'pointer',
                 marginLeft: '93pc',
-                marginTop: '71pc',
+                marginTop: '15pc',
             }}
             whileHover={{}}
             onClick={() => {
