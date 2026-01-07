@@ -83,13 +83,14 @@ import Submarine2 from  "../videos/Vechicles/Submarine2.mp4"
 
 
 export const allRooms = {
-    "Combat Systems": [
+    "Star wars combat system": [
         {id: 1, hasVideo: true, videoSrc: C1,
             description: "Sequence of attacks from the lightsaber" +
                 "\nThe damage rate is: 10-15 randomized per hit" +
                 "\n12 sword attacks before your sword stamina (yellow bar) is completely depleted" +
                 "\nYour energy is depleted by 10 per swing",
-            codeSnippet: ""
+            codeSnippet: "",
+            title: "Lightsaber Attack Chain"
         },
         {id: 2,  hasVideo: true, videoSrc: C2,
             description: "Actions:" +
@@ -97,7 +98,8 @@ export const allRooms = {
                 "\nregular jumps takes 5 stamina, double jump takes 10" +
                 "\nStamina increase: increases by a rate of 2.5 per second" +
                 "\nPlayer dash: decreases stamina by 10",
-            codeSnippet: ""
+            codeSnippet: "",
+            title: "Movement system"
         },
         {id: 3, hasVideo: true, videoSrc: C3,
             description: "Light saber throw:" +
@@ -105,13 +107,17 @@ export const allRooms = {
                 "\nCooldown = 5" +
                 "\nStamina cost = 15 per throw" +
                 "\nDamage = 30 decreasing by 5 as distance from player increases",
-            codeSnippet: ""},
+            codeSnippet: "",
+            title: "Ranegd Saber Throw"
+        },
         {id: 4, hasVideo: true, videoSrc: C4,
             description: "Block + Stun" +
                 "\nif the enemy has started blocking within 2 seconds they will be able to perform a stun + parry" +
                 "\nThe player will fall back and be frozen for 2 seconds if hit while stunned the player will recieve a damage of " +
                 "\nbase modifier(10 - 15) * 2",
-            codeSnippet: ""},
+            codeSnippet: "",
+            title: "Block, Parry and Stun System"
+        },
         {id: 5, hasVideo: true, videoSrc: C5,
             description: "Blaster: " +
                 "The player blasts the target and a projectile projects from the barrel of the gun" +
@@ -119,14 +125,19 @@ export const allRooms = {
                 "\nIf it's a body shot it'll play the default sound and do 15 damage" +
                 "\n Using keycode z to zoom in and hit more accurately" +
                 "\n can rotate bodly smoothly keeping the barrel of the gun insight to increase accuracy",
-            codeSnippet: ""},
+            codeSnippet: "",
+            title: "Blaster Shooting Mechanics"
+        },
         {id: 6, hasVideo: true, videoSrc: C6,
             description: "Blaster: " +
                 "The player can hit the target with the barrel of the gun and ragdoll them",
-            codeSnippet: ""},
+            codeSnippet: "",
+            title: "Blaster Melee (ragdoll)"
+        },
         {id: 7, hasVideo: true, videoSrc: C7, description:
             "Blaster: " +
-                "Overview"
+                "Overview",
+            title: "Blaster combat overview"
         },
         {id: 8, hasVideo: false},
 
@@ -151,7 +162,9 @@ export const allRooms = {
                 "\n!save souls (basic command)" +
                 "\n!error (give a default report which is reported by 'system' which can be changed to a player name, it picks a tube and what soul is inside it" +
                 "\nIt is case sensitive you can't type either without the '!' symbol and it'll still respond " +
-                "\nOr type something after a command that doesn't take inputs and still get a active response"},
+                "\nOr type something after a command that doesn't take inputs and still get a active response",
+            title: "Discord Command & Reporting System"
+        },
         {id: 2, hasVideo: true, videoSrc: D2,
             description: "Uses a webhook to communicate to discord" +
                 "\nIt can recieve args such as (other player name for commands like: ban, kick, and explode)" +
@@ -159,7 +172,9 @@ export const allRooms = {
                 "\nIf desired a reason can be inputted and if it has any words that my system deems filter worthy it won't be listed" +
                 "\nOther commands can easily be added if desired and further functionality" +
                 "\nThis was for a commision which integrated with HD to call these commands from a ui and send it to discord" +
-                "\nFurther functionality was handled by the client"},
+                "\nFurther functionality was handled by the client",
+            title: "Discord Moderation Command System"
+        },
         {id: 3, hasVideo: false},
     ],
     "Abilities": [
@@ -252,13 +267,39 @@ export const allRooms = {
         {id: 1, hasVideo: false},
     ],
     "Cutscenes": [
-        {id: 1, hasVideo: false},
+        {
+            id: 1,
+            hasVideo: true,
+            videoSrc: "S1",
+            title: "",
+            description:
+                "" +
+                "\n" +
+                "\n",
+            codeSnippet: ""
+        }
     ],
+
+    "Deltarune System": [
+        {
+            id: 1,
+            hasVideo: true,
+            videoSrc: "",
+            title: "",
+            description:
+                "" +
+                "\n" +
+                "\n",
+            codeSnippet: ""
+        }
+    ],
+
     "Tower Defense": [
         {id: 1, hasVideo: true, videoSrc: T1,
             description: "Step up to a pad and open the Summon UI" +
                 "\nYou can see the chances of getting what and pull 10 for 900 and 1 for 100" +
-                "\n The ui is animated and all ui was animated and made by me."
+                "\n The ui is animated and all ui was animated and made by me.",
+            title: "Unit Summoning (Gacha) System"
         },
         {id: 2, hasVideo: true, videoSrc: T2,
             description: "See your units displayed in your saved inventory" +
@@ -270,22 +311,26 @@ export const allRooms = {
                 "\n C is for rare units" +
                 "\n D is for super units" +
                 "\n E is for extrodinary units" +
-                "\n F is for brainrot supreme units."
+                "\n F is for brainrot supreme units.",
+            title: "Unit Inventory & Management System"
         },
         {id: 3, hasVideo: true, videoSrc: T3,
-            description: "Equip best units determined by rarity"
+            description: "Equip best units determined by rarity",
+            title: "Auto Equip System"
         },
         {id: 4, hasVideo: true, videoSrc: T4,
             description: "Step on the teleport pad it displays the faces of all the players in the queue" +
                 "\nIf its one player they can auto start" +
                 "\nIt takes 10 seconds to teleport with one person" +
-                "\n20 for 2 and above if all choose to start it skips and teleports them all."
+                "\n20 for 2 and above if all choose to start it skips and teleports them all.",
+            title: "Queue & teleport system"
         },
         {id: 5, hasVideo: true, videoSrc: T5,
             description: "Select the mode" +
                 "\nWait through intermission or skip if all players agree to it" +
                 "\nPlace and rotate units in the viable spots" +
-                "\n the waves will start"
+                "\n the waves will start",
+            title: "Game mode & Wave System"
         },
     ],
     "Random": [

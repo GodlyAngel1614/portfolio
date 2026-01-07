@@ -7,7 +7,7 @@ import { useFrame } from "@react-three/fiber";
 import {useNavigate} from "react-router-dom";
 
 
-const buttonLabels = ["Combat Systems",
+const buttonLabels = ["Star wars combat system",
     "Abilities",
     "Leaderboard",
  //   "Cutscenes",
@@ -18,7 +18,8 @@ const buttonLabels = ["Combat Systems",
     "Random",
     "Tower Defense",
     "Vehicles",
-    "Obbies"
+    "Obbies",
+    "Deltarune System"
 ];
 const radius = 2.5;
 
@@ -27,6 +28,7 @@ export default function Orb() {
     const buttonRefs = useRef([]);
     const [hovered, setHovered] = useState(false);
     const [currentColor, setCurrentColor] = useState('#ffffff');
+    const [menuOpen, setMenuOpen] = useState(false);
     const angleRef = useRef(0);
     const orbPosition = [2, 5, 0.2];
     const lightRef = useRef(null);
@@ -69,6 +71,16 @@ export default function Orb() {
         }
     });
 
+    useEffect(() => {
+        const handleKey = e => {
+            if (e.key === 'Escape') setMenuOpen(false);
+        };
+
+        window.addEventListener('keydown', handleKey);
+        return () => window.removeEventListener('keydown', handleKey);
+    }, []);
+
+
     return (
         <group>
             {/* Main Orb */}
@@ -97,6 +109,96 @@ export default function Orb() {
                     castShadow
                 />
             </a.mesh>
+
+            <Html fullscreen style={{ pointerEvents: 'auto' }}>
+                <div
+                    style={{
+                        position: 'absolute',
+                        top: '20px',
+                        right: '20px',
+                        zIndex: 1000,
+                    }}
+                >
+                    <motion.button
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.95 }}
+                        onClick={() => setMenuOpen(prev => !prev)}
+                        style={{
+                            padding: '10px 18px',
+                            borderRadius: '8px',
+                            background: 'rgba(0,0,0,0.6)',
+                            color: 'white',
+                            border: '1px solid white',
+                            fontWeight: 'bold',
+                            cursor: 'pointer',
+                            backdropFilter: 'blur(6px)',
+                        }}
+                    >
+                        {menuOpen ? "Close Menu" : "Open Menu"}
+                    </motion.button>
+                </div>
+            </Html>
+
+            {menuOpen && (
+                <Html fullscreen style={{ pointerEvents: 'auto' }}>
+                    {/* Backdrop */}
+                    <div
+                        onClick={() => setMenuOpen(false)}
+                        style={{
+                            position: 'absolute',
+                            inset: 0,
+                            zIndex: 999,
+                        }}
+                    >
+                        {/* Menu */}
+                        <motion.div
+                            onClick={e => e.stopPropagation()}
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            exit={{ opacity: 0 }}
+                            style={{
+                                position: 'absolute',
+                                top: '80px',
+                                right: '20px',
+                                background: 'rgba(0,0,0,0.7)',
+                                border: '1px solid white',
+                                borderRadius: '12px',
+                                padding: '16px',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                gap: '10px',
+                                backdropFilter: 'blur(8px)',
+                            }}
+                        >
+                            {buttonLabels.map(label => (
+                                <motion.button
+                                    key={label}
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
+                                    onClick={() => {
+                                        setMenuOpen(false);
+                                        navigate(`/room/${label}`);
+                                    }}
+                                    style={{
+                                        padding: '10px 16px',
+                                        borderRadius: '6px',
+                                        background: 'transparent',
+                                        color: 'white',
+                                        border: '1px solid white',
+                                        cursor: 'pointer',
+                                        fontWeight: 'bold',
+                                        textAlign: 'left',
+                                        whiteSpace: 'nowrap',
+                                    }}
+                                >
+                                    {label}
+                                </motion.button>
+                            ))}
+                        </motion.div>
+                    </div>
+                </Html>
+            )}
+
 
             {/* Orbiting Buttons */}
 
