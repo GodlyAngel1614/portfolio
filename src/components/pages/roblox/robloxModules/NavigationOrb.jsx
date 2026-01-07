@@ -19,7 +19,7 @@ const buttonLabels = ["Star wars combat system",
     "Tower Defense",
     "Vehicles",
     "Obbies",
-    "Deltarune System"
+   // "Deltarune System"
 ];
 const radius = 2.5;
 
@@ -95,7 +95,7 @@ export default function Orb() {
                 <a.meshStandardMaterial
                     color={color}
                     emissive={color}
-                    emissiveIntensity={2}
+                   // emissiveIntensity={2}
                     roughness={1}
                     metalness={0.4}
                     side={THREE.DoubleSide}
