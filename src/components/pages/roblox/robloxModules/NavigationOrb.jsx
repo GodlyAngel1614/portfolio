@@ -16,7 +16,9 @@ const buttonLabels = ["Combat Systems",
     "Discord",
     "FPS",
     "Random",
-    "Tower Defense"
+    "Tower Defense",
+    "Vehicles",
+    "Obbies"
 ];
 const radius = 2.5;
 

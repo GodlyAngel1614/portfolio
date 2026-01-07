@@ -35,6 +35,9 @@ import R2 from "../videos/Random/2.mp4"
 import R3 from "../videos/Random/3.mp4"
 import R4 from "../videos/Random/4.mp4"
 import R5 from "../videos/Random/5.mp4"
+import R6 from "../videos/Random/6.mp4"
+import R7 from "../videos/Random/7.mp4"
+import R8 from "../videos/Random/8.mp4"
 
 // Cozy
 
@@ -71,6 +74,12 @@ import T2 from "../videos/TDG/2.mp4"
 import T3 from "../videos/TDG/3.mp4"
 import T4 from "../videos/TDG/4.mp4"
 import T5 from "../videos/TDG/5.mp4"
+
+// Vehicles
+
+import Boat from "../videos/Vechicles/Boat.mp4"
+import Sub from "../videos/Vechicles/Submarine.mp4"
+import Submarine2 from  "../videos/Vechicles/Submarine2.mp4"
 
 
 export const allRooms = {
@@ -314,6 +323,55 @@ export const allRooms = {
                 "\ntyping this in chat as well removes it"
         },
 
-        {id: 6, hasVideo: false},
+        {id: 6, hasVideo: true, videoSrc: R6,
+            description: "A brawhalla weapon drop with equipping it randomly drops weapons on the players first join " +
+                "It bounces with a blue highlight which can be changed " +
+                "It can be used to work with a round system, like brawlhalla once you equip another weapon the other weapon is no longer avaliable " +
+                "It can be expanded upon easily and add other weapons and different weapon types " +
+                "If the weapon is custom made it's easy to change the way the player holds it for some reason you need to change it for custom config. "
+        },
+        {id: 7, hasVideo: true, videoSrc: R7,
+            description: "This was a main menu made out of boredom based on the one from schedule IV" +
+                "The camera shakes and blurs with the beat of the music " +
+                "The bus is constantly flashing it was meant to be like party lights " +
+                "It teleports you to a baseplate but that's all. "
+        },
+
+        {id: 8, hasVideo: true, videoSrc: R8,
+            description: "Basic red light green light game " +
+                "If your walking while the screen is red you die "
+        },
     ],
+
+    "Obbies": [
+        {id: 1, hasVideo: true, videoSrc: R8,
+            description: "Basic red light green light game " +
+                "If your walking while the screen is red you die ",
+            title: "Red Light Green Light"
+        },
+    ],
+
+    "Vehicles": [
+        {
+            id: 1,
+            hasVideo: true,
+            videoSrc: Boat,
+            title: "Boat System",
+            description: "Commissioned by a client for an animated boat experience. This system is fully custom—not based on the default boat chassis—and is highly customizable. It supports multiple boats simultaneously, all managed on the server through a single remote event from the client."
+        },
+        {
+            id: 2,
+            hasVideo: true,
+            videoSrc: Sub,
+            title: "Submarine System (FULL CFRAME)",
+            description: "Created for a client building a submarine game. This system replaces the original with a smooth, fully integrated design offering complete customization. It supports multiple submarines, all managed server-side using ZAP for networking."
+        },
+        {
+            id: 3,
+            hasVideo: true,
+            videoSrc: Submarine2,
+            title: "Submarine System (Physics + CFrame)",
+            description: "Commissioned with detailed controls (WASDEQTY): W/S = forward/backward, E = surface, Q = dive, T/Y = pitch/yaw tilts, A/D = rotate. Forward/back movement is CFrame-based; vertical movement uses linear velocity, and rotations use Align. Indicators on the trailing parts show orientation and surface status (red when out of water), adjustable for different submarine sizes. Physics-based movement ensures realistic behavior."
+        }
+    ]
 }

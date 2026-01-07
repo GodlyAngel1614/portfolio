@@ -33,7 +33,7 @@ I’ve been programming for almost 4 years, doing commissioned work for 1 year. 
     {
         Title: "How does commissioning you work?",
         id: 3,
-        text: `At the moment, I don't have the Google Sheets form up for my contact page, but generally:
+        text: `I have the google form up if you want to commision me! Just look on the contact page!:
 
 1. Message me on Discord (@Un6dinary). I do not respond to Roblox messages.
 2. Provide a solid plan. Show your progress if applicable.
