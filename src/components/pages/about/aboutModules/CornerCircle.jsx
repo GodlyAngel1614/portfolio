@@ -28,7 +28,7 @@ export default function CornerCircle() {
 
             >
                 <h1 style={{ textAlign: 'center', fontSize: 15, fontWeight: 'bold' }}>
-                   Welcome to the glitch cade!
+                   Click on the cube 15 times sto continue
                 </h1>
             </div>
 

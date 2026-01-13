@@ -119,7 +119,7 @@ function Home() {
 
                 <main>
                     <h1 style={{padding: "20px", margin: "30px"}} className={"title"}>
-                        Light Yagami's Portfolio
+                        Sakura's portfolio
                     </h1>
                 </main>
 
