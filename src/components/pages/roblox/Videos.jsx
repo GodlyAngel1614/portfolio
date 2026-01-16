@@ -206,7 +206,7 @@ function TV({ tvItems, onClick }) {
                                 width: "80%",
                                 fontSize: "20px",
                                 textAlign: "center",
-                                fontFamily: "'Vast Shadow', sans-serif",
+                                fontFamily: "sans-serif",
                                 display: "flex",
                                 flexDirection: "column",
                                 maxHeight: "80vh", // limit height
